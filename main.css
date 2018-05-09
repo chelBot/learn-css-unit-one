@@ -1,0 +1,23 @@
+body {
+  background-color: #0C0336;
+  color: #fff;
+
+}
+
+h1 {
+  font-family: "Helvetica";
+}
+
+img {
+  width: 1000px;
+  height: 500px;
+}
+
+p {
+  /* background-color: #0D337A; */
+  font-size: 30px;
+}
+
+a {
+  color: #fff;
+}

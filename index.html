@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Gallery</title>
+  <!--  width and height should start out as inline styles. Discus separation of concerns. Move stylesheet
+  into style tag. Kinda separated but we can do better. Later, move styles into separate sheet before fixing html. Discuss pros/cons.-->
+  <style media="screen">
+
+    body {
+      background-color: #0C0336;
+      color: #fff; /* discuss cascade/inheritance. What's the difference between body vs universal? */
+    }
+    /* Discuss how this class targets multiple elements */
+    .photo {
+
+      /* Discuss how this changes the div size....not image size. */
+      width: 1000px;
+      height: 500px;
+      background-origin: border-box;
+      background-position: center;
+      /* Notice how text inherits transparancy? Can anyone think of any solutions here?
+      Will fix this in unit 3 webinars!
+      Can also discuss the "best" solution (edit transparancy of image itselt)*/
+      /* opacity: 0.2; */
+    }
+
+    /* Hopefully students think of this (incorrect) solution to the transparancy issue. If so,
+    explain why this doesn't work. Good spot to discuss specificity (and how this is an exception
+    to the rule).
+    */
+
+    /* #incorrect {
+      opacity: 1;
+    } */
+
+    h1 {
+      font-family: "Helvetica"; /* Helvetica tangent. */
+    }
+
+    p {
+      background-color: #0D337A; /* Color contrast and accessibility */
+      font-size: 30px;
+      /* text-align: right; */
+    }
+
+    /* Why doesn't color cascade to anchor but font-size does?
+    --> discuss user agent style sheet and specificty */
+    a {
+      color: #fff;
+    }
+
+    /* why not use ids since we are narrowly targeting an element? --> specificity wars */
+    .blue-jelly {
+      background-image: url("./images/blue-jelly.jpg");
+
+      /* Let's position this image so that we
+      see a jelly fish. Let's look up the MDN docs for this property. */
+      background-position: 90% 30%;
+    }
+
+    .blowfish {
+      background-image: url("./images/blowfish.jpg");
+    }
+
+    .pink-jelly {
+      background-image: url("./images/pink-jelly.jpg");
+    }
+
+    .starfish {
+      background-image: url("./images/starfish.jpg");
+    }
+
+    .turtle {
+      background-image: url("./images/turtle.jpg");
+      /* Let's position this image so that we can
+      see the turtles face. Let's look up the MDN docs for this property. */
+      background-position: 80% 30%;
+    }
+
+    .eel {
+      background-image: url("./images/eel.jpg");
+      /* Let's position this image so that we can
+      see the turtles face. Let's look up the MDN docs for this property. */
+      background-position: 75% 40%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Under the Sea</h1>
+  <div class="photo blue-jelly">
+    <p id="incorrect">Photo by <a href="#">Nick Fewings</a></p>
+  </div>
+  <div class="photo blowfish">
+    <p>Photo by <a href="#">Vlad Tchompalov</a></p>
+  </div>
+  <div class="photo pink-jelly">
+    <p>Photo by <a href="#">Kevin Lanceplaine</a></p>
+  </div>
+  <div class="photo starfish">
+    <p>Photo by <a href="#">Francisco Jesús Navarro Hernández</a></p>
+  </div>
+  <div class="photo turtle">
+    <p>Photo by <a href="#">Wexor Tmg</a></p>
+  </div>
+  <div class="photo eel">
+    <p>Photo by <a href="#">David Clode</a></p>
+  </div>
+</body>
+
+</html>
