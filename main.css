@@ -1,11 +1,14 @@
 body {
   background-color: #0C0336;
   color: #fff;
+  font-family: "Trebuchet MS";
 
 }
 
 h1 {
   font-family: "Helvetica";
+  background-image: url("./images/neon-jelly.jpg");
+  background-position: left 35% top;
 }
 
 img {
@@ -15,7 +18,7 @@ img {
 
 p {
   /* background-color: #0D337A; */
-  font-size: 30px;
+  font-size: 20px;
 }
 
 a {

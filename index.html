@@ -10,15 +10,16 @@
 
     body {
       background-color: #0C0336;
-      color: #fff; /* discuss cascade/inheritance. What's the difference between body vs universal? */
+      /* discuss cascade/inheritance. What's the difference between body vs universal? */
+      color: #fff;
+      font-family: "Trebuchet MS";
+
     }
     /* Discuss how this class targets multiple elements */
     .photo {
-
       /* Discuss how this changes the div size....not image size. */
       width: 1000px;
       height: 500px;
-      background-origin: border-box;
       background-position: center;
       /* Notice how text inherits transparancy? Can anyone think of any solutions here?
       Will fix this in unit 3 webinars!
@@ -36,7 +37,7 @@
     } */
 
     h1 {
-      font-family: "Helvetica"; /* Helvetica tangent. */
+      font-family: "Helvetica"; /* Helvetica tangent. Discus: overrides body font.*/
     }
 
     p {
