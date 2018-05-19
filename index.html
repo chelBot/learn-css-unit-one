@@ -12,7 +12,7 @@
       background-color: #0C0336;
       /* discuss cascade/inheritance. What's the difference between body vs universal? */
       color: #fff;
-      font-family: "Trebuchet MS";
+      font-family: "Courier";
 
     }
     /* Discuss how this class targets multiple elements */
@@ -65,6 +65,13 @@
       background-image: url("./images/blowfish.jpg");
     }
 
+    .eel {
+      background-image: url("./images/eel.jpg");
+      /* Let's position this image so that we can
+      see the turtles face. Let's look up the MDN docs for this property. */
+      background-position: 75% 40%;
+    }
+
     .pink-jelly {
       background-image: url("./images/pink-jelly.jpg");
     }
@@ -79,13 +86,6 @@
       see the turtles face. Let's look up the MDN docs for this property. */
       background-position: 80% 30%;
     }
-
-    .eel {
-      background-image: url("./images/eel.jpg");
-      /* Let's position this image so that we can
-      see the turtles face. Let's look up the MDN docs for this property. */
-      background-position: 75% 40%;
-    }
   </style>
 </head>
 
@@ -97,6 +97,9 @@
   <div class="photo blowfish">
     <p>Photo by <a href="#">Vlad Tchompalov</a></p>
   </div>
+  <div class="photo eel">
+    <p>Photo by <a href="#">David Clode</a></p>
+  </div>
   <div class="photo pink-jelly">
     <p>Photo by <a href="#">Kevin Lanceplaine</a></p>
   </div>
@@ -105,9 +108,6 @@
   </div>
   <div class="photo turtle">
     <p>Photo by <a href="#">Wexor Tmg</a></p>
-  </div>
-  <div class="photo eel">
-    <p>Photo by <a href="#">David Clode</a></p>
   </div>
 </body>
 
